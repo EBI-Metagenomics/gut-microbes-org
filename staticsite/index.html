@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="vf-no-js | vf-smooth-scroll">
+<head>
+   <script>
+    // Detect if JS is on and swap vf-no-js for vf-js on the html element
+    (function(H){H.className=H.className.replace(/\bvf-no-js\b/,'vf-js')})(document.documentElement);
+  </script>
+  <meta charset="UTF-8"/>
+  <meta name="description"
+        content="Data resources for human gut microbial exploration"/>
+  <meta name="keywords"
+        content="Gut, Metagenomics, Microbes, Digestion"/>
+  <title>Gut-Microbes – an EMBL Microbial Ecosystems Resource</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+        rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+        rel="stylesheet"/>
+  <link rel="stylesheet"
+        href="https://assets.emblstatic.net/vf/v2.5.7/css/styles.css"/>
+
+  <link rel="shortcut icon" href="https://assets.emblstatic.net/vf/v2.5.0/assets/vf-favicon/assets/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://assets.emblstatic.net/vf/v2.5.0/assets/vf-favicon/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://assets.emblstatic.net/vf/v2.5.0/assets/vf-favicon/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://assets.emblstatic.net/vf/v2.5.0/assets/vf-favicon/assets/favicon-16x16.png">
+  <link rel="manifest" href="https://assets.emblstatic.net/vf/v2.5.0/assets/vf-favicon/assets/site.webmanifest">
+  <link rel="mask-icon" href="https://assets.emblstatic.net/vf/v2.5.0/assets/vf-favicon/assets/safari-pinned-tab.svg" color="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Web component polyfill (only loads what it needs) -->
+  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/custom-elements@latest"
+          defer></script>
+  <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/custom-elements@latest/src/native-shim.js"
+          defer></script>
+  <!-- For autocomplete/typeahead -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.02.min.css"/>
+
+
+  <!-- Content descriptors -->
+  <meta name="embl:who" content="METT">
+  <meta name="embl:where" content="EBI">
+  <meta name="embl:what" content="gene-curation">
+  <meta name="embl:active" content="what">
+
+  <meta name="embl:maintainer" content="METT">
+  <meta name="embl:last-review" content="2023-08-14">
+</head>
+
+
+
+<body class="vf-body | vf-stack vf-stack--400">
+  <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+    <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+      <li class="vf-breadcrumbs__item">
+        <a href="https://www.embl.org/about/programme/research-plans/microbial-ecosystems/" class="vf-breadcrumbs__link">Microbial ecosystems</a>
+      </li>
+
+      <li class="vf-breadcrumbs__item" aria-current="location">
+        Gut Microbes Browser
+      </li>
+    </ul>
+
+    <span class="vf-breadcrumbs__heading">Jump to:</span>
+    <ul class="vf-breadcrumbs__list vf-breadcrumbs__list--related | vf-list vf-list--inline">
+      <li class="vf-breadcrumbs__item">
+        <a href="http://annotation.gut-microbes.org/?session=local-LnWzwDwGa" class="vf-breadcrumbs__link">Apollo browser</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <style>
+  /* vf-hero wih search is still a prototype concept */
+  .vf-hero--search .vf-hero__content {
+    min-width: 60%;
+  }
+  </style>
+
+  <!-- prototype hero + search -->
+  <section class="vf-hero vf-hero--800 vf-hero--search | vf-u-fullbleed"
+    style="--vf-hero--bg-image: url(&#39;https://acxngcvroo.cloudimg.io/v7/https://www.embl.org/files/wp-content/uploads/microbial-ecosystems-l.jpg&#39;);">
+    <div class="vf-hero__content | vf-box | vf-stack vf-stack--400"><p class="vf-hero__kicker">
+      <h2 class="vf-hero__heading">Gut Microbes Browser</h2>
+      <p class="vf-hero__subheading">Structural and functional annotatations for human gut microbial genomes.</p>
+    </div>
+  </section>
+
+  <section class="vf-grid vf-grid__col-3 | vf-card-container | vf-u-fullbleed vf-u-background-color-ui--grey--light">
+    <div class="vf-grid__col--span-2">
+      <div class="vf-grid vf-grid__col-2">
+        <article class="vf-card vf-card--brand vf-card--bordered">
+          <div class="vf-card__content | vf-stack vf-stack--400">
+            <h3 class="vf-card__heading">
+              <a class="vf-card__link" href="http://annotation.gut-microbes.org">
+                Web Apollo Browser<svg aria-hidden="true" class="vf-card__heading__icon | vf-icon vf-icon-arrow--inline-end" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="currentColor" fill-rule="nonzero"></path></svg>
+              </a>
+            </h3>
+            <p class="vf-card__text">Use Apollo, a web-based genomic annotation platform, to browse the latest gut-microbes data release.</p>
+          </div>
+        </article>
+
+        <article class="vf-card vf-card--brand vf-card--bordered">
+          <div class="vf-card__content | vf-stack vf-stack--400">
+            <h3 class="vf-card__heading">
+              <a class="vf-card__link" href="http://ftp.ebi.ac.uk/pub/databases/mett/">
+                Data release (FTP Directory) <svg aria-hidden="true" class="vf-card__heading__icon | vf-icon vf-icon-arrow--inline-end" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="currentColor" fill-rule="nonzero"></path></svg>
+              </a>
+            </h3>
+            <p class="vf-card__text">Browse and download the annotated genomes of <i>B. uniformis</i> (ATCC8492) and <i>P. vulgatus</i> (ATCC8482).</p>
+          </div>
+        </article>
+
+        <article class="vf-card vf-card--brand vf-card--bordered">
+          <div class="vf-card__content | vf-stack vf-stack--400">
+            <h3 class="vf-card__heading">
+              <a class="vf-card__link" href="https://tinyurl.com/web-apollo-for-gut-microbes">
+                Documentation <svg aria-hidden="true" class="vf-card__heading__icon | vf-icon vf-icon-arrow--inline-end" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="currentColor" fill-rule="nonzero"></path></svg>
+              </a>
+            </h3>
+            <p class="vf-card__text">How to use the Apollo browser and FTP data release.</p>
+          </div>
+        </article>
+
+        <article class="vf-card vf-card--brand vf-card--bordered">
+          <div class="vf-card__content | vf-stack vf-stack--400">
+            <h3 class="vf-card__heading">
+              <a class="vf-card__link" href="https://tinyurl.com/gutmicrobeVideo">
+                Video tutorial <svg aria-hidden="true" class="vf-card__heading__icon | vf-icon vf-icon-arrow--inline-end" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="currentColor" fill-rule="nonzero"></path></svg>
+              </a>
+            </h3>
+            <p class="vf-card__text">A 10 minute screencast covering use of the Apollo browser.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div>
+      <article class="vf-card vf-card--brand vf-card--striped">
+        <div class="vf-card__content | vf-stack vf-stack--400">
+          <h3 class="vf-card__heading">
+            <a class="vf-card__link" href="https://www.embl.org/about/programme/research-plans/microbial-ecosystems/">
+              Microbial Ecosystems Transversal Theme <svg aria-hidden="true" class="vf-card__heading__icon | vf-icon vf-icon-arrow--inline-end" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0C5.376.008.008 5.376 0 12zm13.707-5.209l4.5 4.5a1 1 0 010 1.414l-4.5 4.5a1 1 0 01-1.414-1.414l2.366-2.367a.25.25 0 00-.177-.424H6a1 1 0 010-2h8.482a.25.25 0 00.177-.427l-2.366-2.368a1 1 0 011.414-1.414z" fill="currentColor" fill-rule="nonzero"></path></svg>
+            </a>
+          </h3>
+          <p class="vf-card__text">Dissecting microbial functions and communities to understand how microbes interact with their environments.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  
+  <section class="embl-grid embl-grid--has-centered-content">
+    <div>
+      <div class="vf-section-header">
+        <h2 class="vf-section-header__heading">About the browser</h2>
+      </div>
+    </div>
+    <div class="vf-content">
+      <p>
+        The current version of the Gut Microbes.org browser is the result of EMBL research through the <a href="https://www.embl.org/about/programme/research-plans/microbial-ecosystems/">Microbial Ecosystems Transversal Theme (METT)</a>.
+        The transversal theme aims at mechanistically understanding the complex role that human-associated microbiomes play in human health and disease. 
+        Our current knowledge of bacterial gene functions come primarily from very few model bacteria, failing to capture the genetic diversity within the gut microbiome. 
+        One of the goals of METT is to systematically tackle the vast genetic matter in the gut microbiome and two establish new model microbes. 
+        The Flagship Project of METT has focused efforts on annotating the genomes of <i>Phocaeicola Vulgatus</i> and <i>Bacteroides uniformis</i>, two of the most prevalent and abundant bacterial species of the human microbiome.
+      </p>
+      <p>
+        The current version is a web-based genomic annotation editing platform designed to browse the genomes of the the type strains <i>B. uniformis</i> (ATCC8492) and <i>P. vulgatus</i> (ATCC8482).
+        The annotation data generated by the ME TT has been organised on an FTP directory hosted at EBI and contains structural annotations (such as Prokka and Mobilome predictions, etc) as well as functional annotations (including biosynthetic gene clusters, carbohydrate active enzymes, etc). 
+        More information on the tools and versions used for annotations can be found in the <a href="https://tinyurl.com/web-apollo-for-gut-microbes">documentation</a> and instructions on how to use the browser can be found in the <a href="https://tinyurl.com/gutmicrobeVideo">video tutorial</a>. 
+        The current version of Gut Microbes and associated annotations correspond to 31/05 2023 release.
+      </p>
+    </div>
+  </section>
+    
+
+  <footer class="vf-footer">
+    <div class="vf-footer__inner">
+      <p class="vf-footer__notice">Gut Microbes is a flagship project of EMBL’s microbial ecosystems transversal theme.</p>
+      <section class="vf-footer__legal | vf-grid vf-grid__col-1">
+        <p class="vf-footer__legal-text">Copyright © EMBL-EBI</p>
+        <p class="vf-footer__legal-text">EMBL-EBI is part of the European Molecular Biology Laboratory</p>
+        <a class="vf-footer__link" href="https://www.ebi.ac.uk/about/terms-of-use">Terms of use</a>
+      </section>
+    </div>
+  </footer>
+
+  
+
+  <script nomodule crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=default"></script>
+
+  </body>
+</html>
