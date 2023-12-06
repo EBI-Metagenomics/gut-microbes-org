@@ -12,6 +12,8 @@ items:
   metadata:
     name: gutmicrobes-hl-ingress
     namespace: gutmicrobes-hl-prod
+    annotations:
+      nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
   spec:
     rules:
       - host: www.gut-microbes.org
